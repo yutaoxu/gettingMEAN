@@ -126,21 +126,27 @@ web: npm start
 #第五章
 
 Mongodb，安装一个 GUI:
-robomongo: https://robomongo.org/
 mongochef: http://3t.io/mongochef/
 
 在 mLab 上创建一个 sandbox 数据库
 为数据库添加用户和密码
 在 models/db.js 里创建连接
 
-var dbURI = 'mongodb://xiaolai:xiaolai@ds061395.mlab.com:61395/loc8r';
+var dbURI = 'mongodb://<dbuser>:<dbpassword>@ds061395.mlab.com:61395/loc8r';
 mongoose.connect(dbURI);
 
-heroku config:set MONGOLAB_URI=your_db_uri
+还是直接用 heroku 的比较好：
+
+
+
 heroku addons:add mongolab
 heroku addons:open mongolab
+heroku config:set MONGOLAB_URI=your_db_uri
 heroku config:get MONGOLAB_URI
 heroku config:set NODE_ENV=production
+
+
+git push heroku master
 
 在手动操作 mongodb 的时候，竟然把 ObjectId 写成了 ObjectID，一个字幕大小写竟然耽误了三个小时…… 因为根本 google 不到答案……
 
