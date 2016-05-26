@@ -148,7 +148,7 @@ heroku config:set NODE_ENV=production
 
 git push heroku master
 
-在手动操作 mongodb 的时候，竟然把 ObjectId 写成了 ObjectID，一个字幕大小写竟然耽误了三个小时…… 因为根本 google 不到答案……
+在手动操作 mongodb 的时候，竟然把 ObjectId 写成了 ObjectID，一个字母大小写竟然耽误了三个小时…… 因为根本 google 不到答案……
 
 # REST API
 
@@ -160,6 +160,16 @@ Google Extension: Postman
 
 注意 Mongo 的单复数处理
 
+#好大一个坑
+
+> mongoose 版本要退回到 "mongoose": "~3.8.20", 否则该书中的代码无法执行。
+
+
+fake json data generator:
+
+https://randomuser.me/documentation#howto
+Mockaroo - cloud-based JSON and CSV generator http://www.mockaroo.com
+http://www.json-generator.com
 
 
 
