@@ -14,7 +14,7 @@
 > * javascript -> coffeescript(不一定，再说吧)
 > * mongodb -> mongoose
 > * mvc
-> * RESTful API
+> * REST API
 
 
 # 开始 Getting Mean Project
@@ -149,6 +149,16 @@ heroku config:set NODE_ENV=production
 git push heroku master
 
 在手动操作 mongodb 的时候，竟然把 ObjectId 写成了 ObjectID，一个字幕大小写竟然耽误了三个小时…… 因为根本 google 不到答案……
+
+# REST API
+
+Google Extension: Postman
+
+```var Loc = mongoose.model('Location')```; 出错，结果是 app.js 里少了一句：
+
+> require('./app_api/models/db');
+
+注意 Mongo 的单复数处理
 
 
 ###notes
