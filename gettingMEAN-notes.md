@@ -83,6 +83,15 @@ google 搜索 heroku toolbelt foreman，（http://t.cn/R5A7vMh）发现 foreman 
 heroku local
 ```
 
+heroku create
+
+⬢ still-everglades-59438
+https://still-everglades-59438.herokuapp.com/ | https://git.heroku.com/still-everglades-59438.git
+
+git push heroku master
+
+heroku open
+
 
 要先把 engine 版本添加到 package.json 之中。
 ```
