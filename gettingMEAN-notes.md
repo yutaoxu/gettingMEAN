@@ -16,6 +16,11 @@
 > * mvc
 > * REST API
 
+bootstrap 资源站：
+http://startbootstrap.com/bootstrap-resources/
+
+http://html2pug.com/
+http://www.bootply.com/new#
 
 # 开始 Getting Mean Project
 
