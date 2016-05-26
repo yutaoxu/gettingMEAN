@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    link(rel='stylesheet', href='http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
+
+  body
+    block content
+
+  script(src='http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js')
+  <!-- jquery 必须在 bootstrap.min.js 之前引用 -->
+  script(scr='http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js')
