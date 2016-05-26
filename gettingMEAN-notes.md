@@ -69,6 +69,37 @@ html
 应该给 sublimetext 安装一个 jade-bootstrap 的 snippets 集合，乃至于可以快速书写 jade/pug 文档
 
 
+# 部署到 heroku
+
+下载 heroku toolbelt https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
+
+```
+heroku login
+```
+之后按照提示执行。
+
+google 搜索 heroku toolbelt foreman，（http://t.cn/R5A7vMh）发现 foreman 命令已经被废弃，应该使用以下命令：
+```
+heroku local
+```
+
+
+要先把 engine 版本添加到 package.json 之中。
+```
+node --version
+npm --version
+
+  "engines": {
+    "node": "~4.4.4",
+    "npm": "3.9.2",
+  },
+```
+
+还要添加一个 Procfile
+
+```
+web: npm start
+```
 
 ###notes
 

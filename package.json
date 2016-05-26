@@ -7,7 +7,7 @@
   },
   "engines": {
     "node": "~4.4.4",
-    "npm": "3.9.2",
+    "npm": "3.9.2"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
