@@ -1,8 +1,14 @@
 var express = require('express');
 var router = express.Router();
-var ctrlMain = require('../controllers/main'); // 不用写文件扩展名，默认为 .js
+var ctrlLocations = require('../controllers/locations');
+var ctrlOthers = require('../controllers/others');
 
-/* GET home page. */
-router.get('/', ctrlMain.index); // 这里的 index 是../controllers/main.js 文件里定义的 module.exports.index
+/* Locations pages */
+router.get('/', ctrlLocations.homelist);
+router.get('/location', ctrlLocations.locationInfo);
+router.get('/location/review/new', ctrlLocations.addReview);
+
+/* Other pages */
+router.get('/about', ctrlOthers.about);
 
 module.exports = router;

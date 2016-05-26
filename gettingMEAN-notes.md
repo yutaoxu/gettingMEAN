@@ -23,6 +23,10 @@ nodemon
 
 > http://expressjs.com/en/4x/api.html
 
+比如，use 的定义是
+
+> Mounts the specified middleware function or functions at the specified path. If path is not specified, it defaults to “/”.
+
 # 整理一个 MVC 结构的目录
 
 其实就是把 Models Views Controllers, Routes 这几个文件夹放到一个文件夹里去
