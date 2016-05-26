@@ -2,11 +2,20 @@
 
 # 注册若干程序员必备帐号
 
-> - google.com
-> - github.com
-> - heroku.com
-> - mlab.com
-> - c9.io
+> * google.com
+> * github.com
+> * heroku.com
+> * mlab.com
+> * c9.io
+# 要提前知道过程中反复练习的东西还挺多……
+
+> * html -> jade/pug
+> * css -> sass -> bootstrap
+> * javascript -> coffeescript(不一定，再说吧)
+> * mongodb -> mongoose
+> * mvc
+> * RESTful API
+
 
 # 开始 Getting Mean Project
 
@@ -113,6 +122,28 @@ npm --version
 ```
 web: npm start
 ```
+
+#第五章
+
+Mongodb，安装一个 GUI:
+robomongo: https://robomongo.org/
+mongochef: http://3t.io/mongochef/
+
+在 mLab 上创建一个 sandbox 数据库
+为数据库添加用户和密码
+在 models/db.js 里创建连接
+
+var dbURI = 'mongodb://xiaolai:xiaolai@ds061395.mlab.com:61395/loc8r';
+mongoose.connect(dbURI);
+
+heroku config:set MONGOLAB_URI=your_db_uri
+heroku addons:add mongolab
+heroku addons:open mongolab
+heroku config:get MONGOLAB_URI
+heroku config:set NODE_ENV=production
+
+在手动操作 mongodb 的时候，竟然把 ObjectId 写成了 ObjectID，一个字幕大小写竟然耽误了三个小时…… 因为根本 google 不到答案……
+
 
 ###notes
 
